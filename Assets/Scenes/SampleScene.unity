@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 101596632}
   - component: {fileID: 101596631}
   - component: {fileID: 101596630}
+  - component: {fileID: 101596634}
   m_Layer: 0
   m_Name: sample player_0
   m_TagString: Player
@@ -284,6 +285,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &101596634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101596629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08c64fe80635c04d8707fba4da13455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  hp: 3
 --- !u!1 &436447490
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +325,7 @@ Transform:
   m_GameObject: {fileID: 436447490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.43, y: 1.21, z: 0}
+  m_LocalPosition: {x: 0.68, y: -1.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -363,11 +377,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.2151275, y: 5.634783}
-      - {x: -0.72886515, y: 0.17331298}
-      - {x: -0.085758805, y: -0.2496829}
-      - {x: 0.5539515, y: -0.30727613}
-      - {x: 3.0669727, y: 4.5443115}
+    - - {x: 0.16842273, y: 10.518988}
+      - {x: 0.05753964, y: 2.730843}
+      - {x: 0.5895139, y: 2.3110867}
+      - {x: 1.2831703, y: 2.1963077}
+      - {x: 6.2381115, y: 8.40041}
   m_UseDelaunayMesh: 0
 --- !u!114 &436447493
 MonoBehaviour:
@@ -381,6 +395,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3073f7fda3fd3f2468b861c4aa39ac76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::vision
+  Lazer: {fileID: 560799856472703945, guid: 2599cbccf03d06e4ca8d44dd1eb3b033, type: 3}
+  thisEnemy: {fileID: 2029147786}
+  player2: {fileID: 101596629}
+  aggroDist: 0
+  timeBetweenHits: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +636,7 @@ GameObject:
   - component: {fileID: 2029147791}
   m_Layer: 0
   m_Name: sample robot_0
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

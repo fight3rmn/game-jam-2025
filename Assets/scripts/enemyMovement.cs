@@ -46,11 +46,9 @@ public class enemyMovement : MonoBehaviour
         if(Math.Abs(curRotation.z) > Math.Abs(rotationDist) && aggro == false) {
             if(rotationDist < 0) {
                 rotationDist = UnityEngine.Random.Range(1, 170);
-                print(rotationDist);
             }
             else {
                 rotationDist = UnityEngine.Random.Range(-1, -170);
-                print(rotationDist);
             }
         }
     }
