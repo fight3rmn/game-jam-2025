@@ -7,7 +7,7 @@ public class vision : MonoBehaviour
     public GameObject thisEnemy;
     public GameObject player2;
     public float aggroDist;
-    public float timeBetweenHits;
+    public float timeBetweenHits; 
     void OnTriggerEnter2D(Collider2D hit) {
         if(hit.gameObject.tag.Equals("Player")) {
             //Instantiate(Lazer, thisEnemy.gameObject.transform.position + thisEnemy.gameObject.transform.up * 7, Quaternion.identity);

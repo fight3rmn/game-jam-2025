@@ -159,4 +159,4 @@ MonoBehaviour:
   player1: {fileID: 0}
   angle: 0
   timeOnScreen: 2
-  speed: 10
+  speed: 35
