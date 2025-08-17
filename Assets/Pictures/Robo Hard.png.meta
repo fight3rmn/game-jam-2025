@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 8aa1168b6a524704286968d5b6b177e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6793501180538027474
+    second: Robo Hard_0
+  - first:
+      213: 2039833469168797010
+    second: Robo Hard_1
+  - first:
+      213: -3779840198136525682
+    second: Robo Hard_2
+  - first:
+      213: -7691354636181629096
+    second: Robo Hard_3
+  - first:
+      213: 1501525457876348632
+    second: Robo Hard_4
+  - first:
+      213: 1044790196845153698
+    second: Robo Hard_5
+  - first:
+      213: 9177365076845443774
+    second: Robo Hard_6
+  - first:
+      213: 8220378984088020349
+    second: Robo Hard_7
+  - first:
+      213: -5912039852225427590
+    second: Robo Hard_8
+  - first:
+      213: -8248252546605560581
+    second: Robo Hard_9
+  - first:
+      213: -3210779327844077187
+    second: Robo Hard_10
+  - first:
+      213: -2093798063246114319
+    second: Robo Hard_11
+  - first:
+      213: 5633974327778376877
+    second: Robo Hard_12
+  - first:
+      213: 2776518226684648490
+    second: Robo Hard_13
+  - first:
+      213: -2119234518600504765
+    second: Robo Hard_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robo Hard_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 3103
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd7a27845d574e50800000000000000
+      internalID: 6793501180538027474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_1
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 3103
+        width: 322
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25542c29bb1fe4c10800000000000000
+      internalID: 2039833469168797010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_2
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 3103
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c8452cd5f4b8bc0800000000000000
+      internalID: -3779840198136525682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_3
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 3103
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85717dc75b1d24590800000000000000
+      internalID: -7691354636181629096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_4
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 2079
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8deece1d27d76d410800000000000000
+      internalID: 1501525457876348632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_5
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 2079
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad04c30627df7e00800000000000000
+      internalID: 1044790196845153698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_6
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 2079
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebab273e9ec8c5f70800000000000000
+      internalID: 9177365076845443774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_7
+      rect:
+        serializedVersion: 2
+        x: 3423
+        y: 2079
+        width: 322
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7527a1f127a41270800000000000000
+      internalID: 8220378984088020349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_8
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1055
+        width: 322
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a778626e31734fda0800000000000000
+      internalID: -5912039852225427590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_9
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1055
+        width: 322
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc4ddd8202588d80800000000000000
+      internalID: -8248252546605560581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_10
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 1055
+        width: 322
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71bfa776350173d0800000000000000
+      internalID: -3210779327844077187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_11
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 1055
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f180d041c551f2e0800000000000000
+      internalID: -2093798063246114319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_12
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 31
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac76e01dc5ef2e40800000000000000
+      internalID: 5633974327778376877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_13
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 31
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c9fe5dd9c288620800000000000000
+      internalID: 2776518226684648490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robo Hard_14
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 31
+        width: 578
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a221bfe67f692e0800000000000000
+      internalID: -2119234518600504765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Robo Hard_0: 6793501180538027474
+      Robo Hard_1: 2039833469168797010
+      Robo Hard_10: -3210779327844077187
+      Robo Hard_11: -2093798063246114319
+      Robo Hard_12: 5633974327778376877
+      Robo Hard_13: 2776518226684648490
+      Robo Hard_14: -2119234518600504765
+      Robo Hard_2: -3779840198136525682
+      Robo Hard_3: -7691354636181629096
+      Robo Hard_4: 1501525457876348632
+      Robo Hard_5: 1044790196845153698
+      Robo Hard_6: 9177365076845443774
+      Robo Hard_7: 8220378984088020349
+      Robo Hard_8: -5912039852225427590
+      Robo Hard_9: -8248252546605560581
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

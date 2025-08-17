@@ -1,17 +1,39 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
+    public delegate void PlayerPositionHandler(float yPos, int sortOrder);
+    public static PlayerPositionHandler playerPositionHandler;
+
     [SerializeField] float moveSpeed = 10;
     public InputAction playerControls;
+
+    bool isTouchingDummy = false;
+    Animator anim;
+    int sortOrder;
 
     enum Direction
     {
         UP, DOWN, LEFT, RIGHT,
         UP_LEFT, DOWN_LEFT, UP_RIGHT, DOWN_RIGHT,
-        NONE
+        IDLE
+    }
+    Direction currentDirection = Direction.IDLE;
+
+    Direction InputDirection(Vector2 input)
+    {
+        if (input.x == 0 && input.y > 0) return Direction.UP;
+        if (input.x == 0 && input.y < 0) return Direction.DOWN;
+        if (input.x < 0 && input.y == 0) return Direction.LEFT;
+        if (input.x > 0 && input.y == 0) return Direction.RIGHT;
+        if (input.x < 0 && input.y > 0) return Direction.UP_LEFT;
+        if (input.x < 0 && input.y < 0) return Direction.DOWN_LEFT;
+        if (input.x > 0  && input.y > 0) return Direction.UP_RIGHT;
+        if (input.x > 0 && input.y < 0) return Direction.DOWN_RIGHT;
+        return Direction.IDLE;
     }
 
     Dictionary<Direction, float> angles = new()
@@ -26,32 +48,34 @@ public class PlayerController : MonoBehaviour
         {Direction.DOWN_RIGHT, 135.0f},
     };
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
     {
         playerControls.Enable();
     }
 
-    void Start()
+    void Awake()
     {
-    
+        anim = GetComponent<Animator>();
+        sortOrder = GetComponent<SpriteRenderer>().sortingOrder;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector2 input = playerControls.ReadValue<Vector2>();
-        if (input != Vector2.zero)
+        Direction thisDirection = InputDirection(input);
+        if (thisDirection != currentDirection)
         {
-            transform.position += new Vector3(
-                input.x * moveSpeed * Time.deltaTime,
-                input.y * moveSpeed * Time.deltaTime, 0);
-
-            UpdateRotation(InputDirection(input));
-            //transform.rotation = Quaternion.LookRotation(input);
+            currentDirection = thisDirection;
+            //Debug.Log("new direction: " + currentDirection.ToString());
+            anim.SetTrigger(currentDirection.ToString());
         }
-
-        //Debug.Log(InputDirection(input));
+        transform.position += new Vector3(
+            input.x * moveSpeed * Time.deltaTime,
+            input.y * moveSpeed * Time.deltaTime, 0);
+        if (currentDirection != Direction.IDLE)
+        {
+            playerPositionHandler?.Invoke(transform.position.y, sortOrder);
+        } 
     }
 
     void UpdateRotation(Direction direction)
@@ -59,19 +83,36 @@ public class PlayerController : MonoBehaviour
         Vector2 currentEulers = transform.eulerAngles;
         float angle = angles[direction];
         transform.localEulerAngles = new Vector3(currentEulers.x, currentEulers.y, angle); 
-    }    
+    }
 
-    Direction InputDirection(Vector2 input)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (input.x == 0 && input.y > 0) return Direction.UP;
-        if (input.x == 0 && input.y < 0) return Direction.DOWN;
-        if (input.x < 0 && input.y == 0) return Direction.LEFT;
-        if (input.x > 0 && input.y == 0) return Direction.RIGHT;
-        if (input.x < 0 && input.y > 0) return Direction.UP_LEFT;
-        if (input.x < 0 && input.y < 0) return Direction.DOWN_LEFT;
-        if (input.x > 0  && input.y > 0) return Direction.UP_RIGHT;
-        if (input.x > 0 && input.y < 0) return Direction.DOWN_RIGHT;
-        return Direction.NONE;
+        if (collision.gameObject.CompareTag("Dummy"))
+        {
+            isTouchingDummy = true;
+            ISabotagable dummy = collision.gameObject.GetComponent<ISabotagable>();
+            dummy?.IsTouching(true);
+        }
+        else if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            collision.gameObject.GetComponent<PowerUp>().Die();
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        ISabotagable dummy = collision.gameObject.GetComponent<ISabotagable>();
+        dummy?.IsTouching(currentDirection != Direction.IDLE);
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Dummy"))
+        {
+            isTouchingDummy = false;
+            ISabotagable dummy = collision.gameObject.GetComponent<ISabotagable>();
+            dummy?.IsTouching(false);
+        }
     }
 
     void OnDisable()
